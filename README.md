@@ -1,5 +1,5 @@
 # N1-MDL
-Theme based on ** Google [MDL Palette][1] ** for [Nylas][nylas] [N1][n1] mail client.
+Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail client.
 
 ![main](img/main.png)
 
@@ -32,7 +32,7 @@ You can grab colors from [`colors.less`](http://github.com/Rawnly/n1-mdl/blob/ma
 For a live preview you can use [this tool][2] by Google.
 ![](img/change-color.gif) or [unofficlial](http://rawnly.github.io/n1-mdl/tool/index.html) tool edited by me
 
-**Reccomandation**: `-A` means 'accent'. Then for a better result use accents only for _secondary_ colors not as _primary_ color (** [Material Design Guidelines][1] ** ).
+**Reccomandation**: `-A` means 'accent'. Then for a better result use accents only for _secondary_ colors not as _primary_ color (**[Material Design Guidelines][1]** ).
 
 #### Colors List:
 - red ( @red & @red-a )    
