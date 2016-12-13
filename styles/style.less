@@ -1,8 +1,10 @@
 @import "google";
-@import 'user/user-colors';
+@import 'user-colors';
 @import "ui-variables";
-
 /* GLOBAL*/
+a {
+    color: #74b8d7;
+}
 
 button, input[type="button"], .button {
   &:hover {
@@ -73,8 +75,8 @@ input[type="url"] {
         transition: 0.3s all ease;
 
         &:hover {
-            // background: darken(@primary, 30%);
-            // box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+            background: darken(@primary, 30%);
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
             cursor: pointer !important;
             /* debug*/
         }

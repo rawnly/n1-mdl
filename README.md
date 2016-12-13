@@ -20,13 +20,13 @@ Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail clie
 # How to:
 ## Install
 1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet
-2. [Just download the latest release](https://github.com/Rawnly/n1-mdl)
+2. [Just download the latest release](https://github.com/Rawnly/n1-mdl/releases)
 3. Open `N1>Preferences>General>Select theme` and select `Install new theme...` from the dropdown
 
 ## <u>Make</u> it yours!
-The theme is based on 2 color variables `@primary` and `@secondary`. Edit them it's simple, just open this `~/.nylas/packages/n1-mdl/styles/user/user-colors.less` at [this line](http://github.com/Rawnly/n1-mdl/blob/master/styles/user/user-colors.less#L4) 
+The theme is based on 2 color variables `@primary` and `@secondary`. Edit them it's simple, just open this `~/.nylas/packages/n1-mdl/styles/user/user-colors.less` at [this line](http://github.com/Rawnly/n1-mdl/blob/master/styles/user-colors.less#L3) 
 
-You can grab colors from [`colors.less`](http://github.com/Rawnly/n1-mdl/blob/master/styles/user/colors.less) in the same folder.
+You can grab colors from [`colors.less`](http://github.com/Rawnly/n1-mdl/blob/master/styles/colors.less) in the same folder.
 
 ### Colors Preview 
 For a live preview you can use [this tool][2] by Google.
