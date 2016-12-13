@@ -1,0 +1,133 @@
+@import 'palette';
+@import 'ui-variables';
+@import 'user';
+@import 'fonts/fira_code/fira_code.css';
+.toolbar-activity .activity-toolbar-icon {
+    color: white;
+    background-color: white;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.sheet-toolbar .item-back {
+  &:active {
+    .item-back-title {
+      color: darken(@primary, 15%);
+    }
+    img {
+      background: darken(@primary, 15%);
+    }
+  }
+  &:hover {
+    cursor: pointer !important;
+    * {
+      cursor: pointer !important;
+    }
+  }
+}
+
+.sheet-toolbar .item-back:hover img.content-mask {
+    cursor: pointer !important;
+}
+
+.sheet-toolbar .item-back:hover .item-back-title {
+    cursor: pointer !important;
+}
+
+.sheet-toolbar .item-back:hover {
+    cursor: pointer !important;
+}
+
+.sheet-toolbar {
+  .sheet-toolbar-container {
+    background: @primary;
+    .btn-toolbar {
+        box-shadow: none; // 0 0.5px 0.05px rgba(0, 0, 0, 0.4), 0 -0.5px 0 rgba(0, 0, 0, 0.12);
+        background: transparent;
+        border: 0px solid transparent;
+    }
+  }
+}
+
+.preferences-wrap {
+  * {
+    transition: .3s all ease;
+  }
+  .preferences-tabs {
+    .item {
+      &:hover {
+        border-radius: 5px 5px 0 0;
+        background: desaturate(@secondary, 20%);
+        cursor: pointer !important;
+        .name {
+          color: white;
+        }
+      }
+      .name {
+        color: @primary;
+      }
+    }
+  }
+}
+
+.preferences-wrap .container-preference-tabs .preferences-tabs .item.active {
+  background: @primary;
+  .name {
+    color: @white;
+  }
+}
+
+.draft-list .list-item,
+.thread-list .list-item {
+    -webkit-transition: 0s;
+    transition: 0s;
+    background: @background-primary;
+    border-bottom: 1px solid @border-color-primary;
+
+    &:hover {
+        background: lighten(@bgray-100, 15%);
+        color: @bgray-800;
+        cursor: pointer !important;
+        .mail-important-icon {
+            opacity: 0.8;
+        }
+    }
+
+    &.focused:hover {
+        color: @white;
+        background: @component-active-color;
+    }
+}
+
+.draft-list .list-item.focused:hover, .thread-list .list-item.focused:hover {
+  background: mix(@primary, @secondary, 20%);
+}
+.draft-list .list-item.focused, .thread-list .list-item.focused {
+  background: mix(@primary, @secondary, 50%);
+}
+
+.preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    border: 1px solid @material-light-teal;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode img {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    background-color: @material-light-teal;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.plugins-view .package .info .title {
+  color: @material-light-teal;
+}
+
+
+.container-templates .template-wrap, .container-templates .template-wrap * {
+  font-family: 'Fira Code';
+}
