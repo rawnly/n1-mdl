@@ -1,4 +1,20 @@
 @import 'theme-colors';
+@import 'ui-variables';
 
-@primary : @green;
-@secondary : @green-A;
+// User Theme Colors
+// You can manipolate them
+// with less function, like `mix() lighten() darken()` etc etc...
+
+// Primary color is for the tool bar and settings
+@primary : @green; // Default @green
+
+// secondary color is for selections and urls
+@secondary : @green-A; // Default @green-A
+
+// background is the background
+// Don't use @bgray without changing @text-color
+@background: @white; // Default @white
+
+
+// Text Color
+@user-text-color: @material-light-teal; // Default @material-light-teal

@@ -2,27 +2,18 @@
 @import 'palette';
 @import 'user';
 
-@material-teal: @white;
-@material-light-teal: #607D8B;
-@material-gray: @gray-200;
-
-// SNOOZE TRASH ETC
-@material-green: @green-A1;
-@material-red: @red-A2;
-@material-purple: @purple-A1;
-
 //=============================== Components ===========================//
 //== Toolbar
 @toolbar-background-color: @primary;
 
 //== Account Sidebar
-@panel-background-color:         @white;
+@panel-background-color:         @background;
 @source-list-bg:                 @panel-background-color;
 @source-list-active-bg:          @panel-background-color;
 @source-list-active-color:       @component-active-color;
 
 //== Thread List (e.g, `.list-group-item`, `.list-item`)
-@list-bg:                  @white;
+@list-bg:                  @background;
 @list-border:              darken(@list-bg, 15%);
 @list-hover-bg:            darken(@list-bg, 4%);
 @list-focused-color:       @list-bg;
@@ -59,10 +50,10 @@
 @accent-primary:      @secondary;
 @accent-primary-dark: @material-teal;
 
-@background-primary:     @white;
-@background-off-primary: @white;
-@background-secondary:   @white;
-@background-tertiary:    @white;
+@background-primary:     @background;
+@background-off-primary: @background;
+@background-secondary:   @background;
+@background-tertiary:    @background;
 
 @color-info:    @blue-800;
 @color-success: @green-500;
@@ -84,7 +75,7 @@ rgba(253,253,253,0.75) 100%);
 //============================= Typography =============================//
 
 // ----- Colors -----
-@text-color:         @material-light-teal;
+@text-color:         @user-text-color;
 @text-color-inverse: @white;
 
 @text-color-heading: @material-teal;
