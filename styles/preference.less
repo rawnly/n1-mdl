@@ -1,23 +1,29 @@
 @import 'palette';
 @import 'ui-variables';
 @import 'user';
-@import 'fonts/fira_code/fira_code.css';
+// @import 'fonts/fira_code/fira_code.css';
 
 
 .toolbar-activity .activity-toolbar-icon {
-    color: white;
-    background-color: white;
+    color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
+    background-color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
     &:hover {
         cursor: pointer;
     }
 }
 .sheet-toolbar .item-back {
+  .item-back-title {
+    color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
+  }
+  .content-mask {
+    background-color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
+  }
   &:active {
     .item-back-title {
-      color: darken(@primary, 15%);
+      color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
     }
     img {
-      background: darken(@primary, 15%);
+      background-color: contrast(@primary, darken(#fff, 100%), lighten(@white, 100%));
     }
   }
   &:hover {
@@ -44,11 +50,15 @@
   .sheet-toolbar-container {
     background: @primary;
     .btn-toolbar {
+        color: contrast(@primary);
         box-shadow: none; // 0 0.5px 0.05px rgba(0, 0, 0, 0.4), 0 -0.5px 0 rgba(0, 0, 0, 0.12);
         background: transparent;
         border: 0px solid transparent;
     }
   }
+}
+.sheet-toolbar .item-back img.content-mask {
+  background: contrast(@primary);
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask {
@@ -56,17 +66,17 @@
 }
 
 .preferences-wrap {
-  * {
-    transition: .3s all ease;
-  }
   .preferences-tabs {
+    * {
+      transition: .3s all ease;
+    }
     .item {
       &:hover {
         border-radius: 5px 5px 0 0;
         background: desaturate(@secondary, 20%);
         cursor: pointer !important;
         .name {
-          color: white;
+          color: contrast(@background);
         }
       }
       .name {
@@ -79,51 +89,69 @@
 .preferences-wrap .container-preference-tabs .preferences-tabs .item.active {
   background: @primary;
   .name {
-    color: @white;
+    color: contrast(@primary);
   }
 }
 
 .draft-list .list-item,
 .thread-list .list-item {
-    -webkit-transition: 0s;
-    transition: 0s;
     background: @background-primary;
     border-bottom: 1px solid @border-color-primary;
 
     &:hover {
         background: lighten(@bgray-100, 15%);
-        color: @bgray-800;
+        // color: contrast(lighten(@bgray-100, 15%));
         cursor: pointer !important;
         .mail-important-icon {
             opacity: 0.8;
         }
     }
 
-    &.focused:hover {
-        color: @white;
-        background: @component-active-color;
-    }
+    // &.focused:hover {
+    //     color: @white;
+    //     background: @component-active-color;
+    // }
 }
 
-.draft-list .list-item.focused:hover, .thread-list .list-item.focused:hover {
-  background: mix(@primary, @secondary, 20%);
-}
+// .draft-list .list-item.focused:hover, .thread-list .list-item.focused:hover {
+//   background: mix(@primary, @secondary, 20%);
+// }
 .draft-list .list-item.focused, .thread-list .list-item.focused {
   background: mix(@primary, @secondary, 50%);
+}
+
+// Layout Selector
+.preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode.active {
+  transition: 0.3s all ease;
+  border: 1px solid @primary;
+  color: @primary;
+  &:hover {
+      cursor: default;
+  }
+}
+.preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode.active img {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  background: @primary;
+  &:hover {
+      cursor: default;
+  }
 }
 
 .preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode {
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    border: 1px solid @material-light-teal;
+    border: 1px solid contrast(@background, darken(@bgray, 0%), lighten(@bgray, 20%));
+    color: contrast(@background, darken(@bgray, 0%), lighten(@bgray, 20%));
     &:hover {
         cursor: pointer;
     }
 }
+
 .preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode img {
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    background-color: @material-light-teal;
+    background-color: contrast(@background, darken(@bgray, 0%), lighten(@bgray, 20%));
     &:hover {
         cursor: pointer;
     }
@@ -134,6 +162,31 @@
 }
 
 
-.container-templates .template-wrap, .container-templates .template-wrap * {
-  font-family: 'Fira Code';
+// .container-templates .template-wrap, .container-templates .template-wrap * {
+//   font-family: 'Fira Code';
+// }
+
+.nylas-outline-view .item.selected {
+  color: contrast(@sidebar-background, darken(@secondary, 30%), lighten(@secondary, 10%));
+}
+.nylas-outline-view .item.selected img.content-mask {
+  background: contrast(@sidebar-background, darken(@secondary, 30%), lighten(@secondary, 10%));
+}
+.nylas-outline-view .item .item-count-box.alt-count {
+  background: contrast(@sidebar-background, darken(@secondary, 30%), lighten(@secondary, 10%));
+  color: contrast(contrast(@sidebar-background, darken(@secondary, 30%), lighten(@secondary, 10%)));
+}
+
+.account-sidebar {
+    background-color: @sidebar-background;
+}
+
+.nylas-outline-view .item.selected {
+    background: @sidebar-background;
+}
+
+
+.nylas-editable-list .items-wrapper .selected.editing, .nylas-editable-list:focus .items-wrapper .selected {
+    color: contrast(contrast(@background));
+    background-color: contrast(@background);
 }

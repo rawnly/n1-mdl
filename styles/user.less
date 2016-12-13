@@ -3,7 +3,7 @@
 
 // User Theme Colors
 // You can manipolate them
-// with less function, like `mix() lighten() darken()` etc etc...
+// with less function, like `mix() lighten() darken() contrast()` etc etc...
 
 // Primary color is for the tool bar and settings
 @primary : @green; // Default @green
@@ -13,8 +13,8 @@
 
 // background is the background
 // Don't use @bgray without changing @text-color
-@background: @white; // Default @white
-
+@background : @white; // Default @white
+@sidebar-background : darken(@background, 2%);
 
 // Text Color
-@user-text-color: @material-light-teal; // Default @material-light-teal
+@user-text-color : contrast(@background); // Default @material-light-teal
