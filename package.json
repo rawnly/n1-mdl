@@ -3,11 +3,11 @@
   "title": "N1-MDL",
   "displayName": "N1-MDL",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Theme based on Google MDL",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
   },
-  "private": false
+  "private": true
 }
