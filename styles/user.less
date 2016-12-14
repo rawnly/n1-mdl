@@ -4,17 +4,22 @@
 // User Theme Colors
 // You can manipolate them
 // with less function, like `mix() lighten() darken() contrast()` etc etc...
+// For Navbar and Settings.
+// Default @green
+@primary : @green;
 
-// Primary color is for the tool bar and settings
-@primary : @green; // Default @green
+// For url hovers and open thread.
+// Default @green-A
+@secondary : @green-A;
 
-// secondary color is for selections and urls
-@secondary : @green-A; // Default @green-A
+// All background except for sidebar.
+// Default @white
+@background : @white;
 
-// background is the background
-// Don't use @bgray without changing @text-color
-@background : @white; // Default @white
+// Sidebar background
+// Default darken(@background, 2%)
 @sidebar-background : darken(@background, 2%);
 
 // Text Color
-@user-text-color : contrast(@background); // Default @material-light-teal
+// Default constrast(@background)
+@user-text-color : contrast(@background);
