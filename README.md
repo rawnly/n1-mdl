@@ -16,7 +16,7 @@ Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail clie
 
 ### New mail
 ![send](img/send.png)
-**More color combinations [here](https://github.com/Rawnly/n1-mdl/docs/list.md).**
+**More color combinations [here](https://github.com/Rawnly/n1-mdl/blob/master/docs/list.md).**
 # How to:
 ## Install
 1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet
