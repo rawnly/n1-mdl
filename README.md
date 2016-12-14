@@ -1,22 +1,20 @@
 # N1-MDL
 Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail client.
 
-![main](img/main.png)
+![main](img/black/main.png)
 
 ### Settings
 - #### General
 ![general](img/black/email.png)
 
 - #### Accounts
-![accounts](img/accounts.png)
+![accounts](img/black/accounts.png)
 
 - #### Themes
-![appareal](img/appareance.png)
+![appareal](img/black/appareance.png)
 > Transition smoothed
-
-### New mail
-![send](img/send.png)
 **More color combinations [here](https://github.com/Rawnly/n1-mdl/blob/master/docs/list.md).**
+
 # How to:
 ## Install
 1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet
