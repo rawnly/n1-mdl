@@ -5,13 +5,13 @@ Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail clie
 
 ### Settings
 - #### General
-![general](img/settings-1.png)
+![general](img/black/email.png)
 
 - #### Accounts
-![accounts](img/settings-3.png)
+![accounts](img/accounts.png)
 
 - #### Themes
-![appareal](img/settings-2.png)
+![appareal](img/appareance.png)
 > Transition smoothed
 
 ### New mail
