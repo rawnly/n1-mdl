@@ -1,4 +1,7 @@
 # N1-MDL
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd59486632f74914ac70a3380a666020)](https://www.codacy.com/app/fedevitale99/n1-mdl?utm_source=github.com&utm_medium=referral&utm_content=Rawnly/n1-mdl&utm_campaign=badger)
+
 Theme based on **Google [MDL Palette][1]** for [Nylas][nylas] [N1][n1] mail client.
 
 ![main](img/main.png)
